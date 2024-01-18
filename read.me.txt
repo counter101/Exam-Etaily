@@ -1,0 +1,74 @@
+JWT Server
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/jwt-server.git
+Navigate to the jwt-server directory:
+
+bash
+Copy code
+cd jwt-server
+Install dependencies:
+
+bash
+Copy code
+npm install
+Create a .env file in the root directory with the following content:
+
+env
+Copy code
+PORT=3000
+SECRET_KEY=your_secret_key_here
+Replace your_secret_key_here with a strong and secret key.
+
+Usage
+Start the JWT server:
+
+bash
+Copy code
+npm start
+The JWT server will be running on http://localhost:3000 (or the port specified in the .env file).
+
+User Server
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/user-server.git
+Navigate to the user-server directory:
+
+bash
+Copy code
+cd user-server
+Install dependencies:
+
+bash
+Copy code
+npm install
+Create a .env file in the root directory with the following content:
+
+env
+Copy code
+PORT=4000
+SECRET_KEY=your_secret_key_here
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=mataro091
+DB_DATABASE=student
+Replace your_secret_key_here with the same secret key used in the JWT server. Adjust the database configuration based on your setup.
+
+
+Start the User server:
+
+bash
+Copy code
+npm start
+The User server will be running on http://localhost:4000 (or the port specified in the .env file).
+
+Notes
+Make sure to have Node.js and npm installed on your machine.
+Ensure that the MySQL server is running and accessible with the provided database configuration.
+It is recommended to use environment variables for sensitive information in a production environment.
